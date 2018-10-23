@@ -1,3 +1,5 @@
 [user]
 	email = istvan@swissdent.hu
 	name = Dr. Sebestyén-Teleki István
+[core]
+	editor = vim
