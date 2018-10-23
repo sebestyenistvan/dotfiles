@@ -2,7 +2,7 @@
 
 # Install dotfiles and create symlinks
 
-DOTDIR="~/.dotfiles"
+DOTDIR="$HOME/.dotfiles"
 
 cd $HOME
 
@@ -13,9 +13,8 @@ ln -s $DOTDIR/.zshrc $HOME
 
 # INSTALL oh-my-zsh
 # Please install zsh first
-git clone https://github.com/robbyrussell/oh-my-zsh.git $DOTDIR/.oh-my-zsh
+git clone https://github.com/robbyrussell/oh-my-zsh.git $DOTDIR/.oh-my-zsh/
 
-mv $HOME/.oh-my-zsh $HOME/.dotfiles
 ln -s $HOME/.dotfiles/.oh-my-zsh $HOME
 
 # Add autosuggestion
