@@ -28,3 +28,5 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 # Please install tmux first
 git clone https://github.com/jimeh/tmux-themepack.git ~/.dotfiles/.tmux-themepack
 ln -s $HOME/.dotfiles/.tmux-themepack $HOME
+
+cp $DOTDIR/istvan.zsh-theme $DOTDIR/.oh-my-zsh/themes/
