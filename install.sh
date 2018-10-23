@@ -28,9 +28,7 @@ ln -s $DOTDIR/.zshrc $HOME
 
 # INSTALL oh-my-zsh
 # Please install zsh first
-git clone https://github.com/robbyrussell/oh-my-zsh.git $DOTDIR/.oh-my-zsh/
-
-ln -s $HOME/.dotfiles/.oh-my-zsh $HOME
+git clone https://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh/
 
 # Add autosuggestion
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -40,7 +38,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 # Install tmux themepack
 # Please install tmux first
-git clone https://github.com/jimeh/tmux-themepack.git ~/.dotfiles/.tmux-themepack
-ln -s $HOME/.dotfiles/.tmux-themepack $HOME
+git clone https://github.com/jimeh/tmux-themepack.git $HOME/.tmux-themepack
 
-cp $DOTDIR/istvan.zsh-theme $DOTDIR/.oh-my-zsh/themes/
+cp $DOTDIR/istvan.zsh-theme $HOME/.oh-my-zsh/themes/
