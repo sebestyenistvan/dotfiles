@@ -6,6 +6,7 @@ DOTDIR="~/.dotfiles"
 
 cd $HOME
 
+ln -s $DOTDIR/.gitconfig $HOME
 ln -s $DOTDIR/.tmux.conf $HOME
 ln -s $DOTDIR/.vimrc $HOME
 ln -s $DOTDIR/.zshrc $HOME
