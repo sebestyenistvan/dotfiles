@@ -4,14 +4,15 @@
 
 DOTDIR="~/.dotfiles"
 
+cd $HOME
+
 ln -s $DOTDIR/.tmux.conf $HOME
 ln -s $DOTDIR/.vimrc $HOME
 ln -s $DOTDIR/.zshrc $HOME
 
-cd $HOME
 # INSTALL oh-my-zsh
 # Please install zsh first
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+git clone https://github.com/robbyrussell/oh-my-zsh.git $DOTDIR/.oh-my-zsh
 
 mv $HOME/.oh-my-zsh $HOME/.dotfiles
 ln -s $HOME/.dotfiles/.oh-my-zsh $HOME
