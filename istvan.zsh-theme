@@ -1,8 +1,8 @@
-if [ $UID -eq 0 ]; then NCOLOR="red"; else bg1=33; bg2=39; f1=17; f2=251; fi
+if [ $UID -eq 0 ]; then c1=124; c2=172; c3=215; else c1=39; c2=51; c3=87; fi
 
 #PROMPT='%{$fg_bold[$NCOLOR]%}%M  %{$fg[$NCOLOR]%}%c ➤ %{$reset_color%}'
 #PROMPT='%F{$f1}%K{$bg1}%M %F{$bg1}%K{$bg2} %F{f1}%K{$bg2}%c %F{$bg2}%K{232}%{$reset_color%} '
-PROMPT='%F{45}%M» %F{f1}%c %F{$bg2}»%{$reset_color%} '
+PROMPT='%F{$c1}%M: %F{$c2}%c %F{$c3}»%{$reset_color%} '
 RPROMPT='%{$fg[$NCOLOR]%}%p $(git_prompt_info)%{$reset_color%}'
 
 ZSH_THEME_GIT_PROMPT_PREFIX="git:"
